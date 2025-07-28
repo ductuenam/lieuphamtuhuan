@@ -15,7 +15,7 @@ const RegisterSection = () => {
                     </ul>
                 </div>
                 <a href="https://ductuenam.sg.larksuite.com/share/base/form/shrlgfF59Ui0Ik881yxwrW47BPf" target="_blank" rel="noopener noreferrer" className="btn-primary inline-block bg-green-700 text-white font-bold py-4 px-12 rounded-full text-xl hover:bg-green-800">
-                    ĐẾN FORM ĐĂNG KÝ NHẬN SÁCH
+                    ĐIỀN FORM ĐĂNG KÝ NHẬN SÁCH
                 </a>
             </div>
         </section>
