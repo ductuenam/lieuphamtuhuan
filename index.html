@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gieo Duyên Sách Hay - Liễu Phàm Tứ Huấn</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS for theme and animations -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f7f5; /* A soft, calming background color */
+        }
+        .hero-section {
+            background: linear-gradient(to bottom, #ffffff, #f8f7f5);
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+        .section-title {
+            border-bottom: 2px solid #a3b18a;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+        .faq details > summary {
+            cursor: pointer;
+            list-style: none; /* Hide default marker */
+        }
+        .faq details > summary::-webkit-details-marker {
+            display: none; /* Hide default marker for Chrome/Safari */
+        }
+        .faq details > summary::after {
+            content: '+';
+            float: right;
+            font-size: 1.5rem;
+            line-height: 1;
+            font-weight: 300;
+            transition: transform 0.2s ease-in-out;
+        }
+        .faq details[open] > summary::after {
+             transform: rotate(45deg);
+        }
+        .carousel-item {
+            display: none;
+            animation: fadeIn 0.7s ease-in-out;
+        }
+        .carousel-item.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0.4; }
+            to { opacity: 1; }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
